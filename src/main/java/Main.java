@@ -23,44 +23,11 @@ public class Main {
      */
 
     public static void main(String[] args) {
+        String a = "Renan";
+        String b = new String("Renan");
 
-        // Gherkin
-        // Given (Dado) - When (Quando) - Then (Então)
-        testeDeveLigarCorretamente();
-        testeDeveDesligarCorretamente();
+        System.out.println(a.equals(b));
 
-    }
 
-    public static void testeDeveLigarCorretamente() {
-        // Teste 01 - Validar se o carro liga corretamente
-        // Given
-        Carro carro = new Carro();
-        // When
-        carro.ligarCarro();
-        // Then
-        System.out.println("testeDeveLigarCorretamente: " + carro.getLigado());
-    }
-
-    public static void testeDeveDesligarCorretamente() {
-        // Given
-        Carro carro = new Carro();
-        carro.ligarCarro();
-
-        // When
-        carro.desligarCarro();
-
-        // Then
-        System.out.println("testeDeveDesligarCorretamente: " + (carro.getLigado() == false));
-    }
-
-    public static void testeDeveAcelerarCorretamete() {
-        // Dado
-        // carro ligado
-
-        // Quando
-        // acelerar
-
-        // Entao
-        // velocidade == ?
     }
 }
